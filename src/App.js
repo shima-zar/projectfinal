@@ -1,8 +1,8 @@
 import "./App.css";
-import Header from "./Header";
+import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import TinderCards from "./TinderCards";
-import SwipeButtons from "./SwipeButtons";
+import TinderCards from "./components/TinderCards";
+import SwipeButtons from "./components/SwipeButtons";
 
 function App() {
   return (
