@@ -10,31 +10,18 @@ function App() {
       <Header />
       <Router>
         <Switch>
-        <Route path="/">
+          <Route path="/">
             <TinderCards />
             {/* home page */}
-            {/* ppl Cards */}
-            <SwipeButtons/>
+            <SwipeButtons />
             {/* Buttons */}
           </Route>
-          <Route path="/signup">
-            <h1>Sign Up</h1>
-            {/* Sign Up page */}
-          </Route>
-          <Route path="/workouts">
-            <h1>Work Outs</h1>
-            {/* work outs page */}
-          </Route>
-          <Route path="/matchbox">
-            <h1>Match Box</h1>
-            {/* Match box */}
-          </Route>
-          <Route path="/chatbox">
-            <h1>Chat Box</h1>
-            {/* Chat box */}
-          </Route>
-          
-          {/* Idividual chat screen */}
+          <Route path="/Signup">{/* Sign Up page */}</Route>
+          <Route path="/WorkOuts">{/* workouts page */}</Route>
+          <Route path="/SwipePage">{/* swipe Page */}</Route>
+          <Route path="/MatchBox">{/* Match box */}</Route>
+          <Route path="/ChatBox">{/* Idividual chat screen */}</Route>
+          <Route path="/Profile">{/* personal profile*/}</Route>
         </Switch>
       </Router>
     </div>
