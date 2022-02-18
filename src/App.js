@@ -3,6 +3,13 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import TinderCards from "./components/TinderCards";
 import SwipeButtons from "./components/SwipeButtons";
+import Home from "./components/Home.js";
+import Signup from "./components/Signup.js";
+import Profile from "./components/Profile.js";
+import SwipePage from "./components/SwipePage.js";
+import MatchBox from "./components/MatchBox.js";
+import ChatBox from "./components/ChatBox.js";
+import WorkOuts from "./components/WorkOuts.js";
 
 function App() {
   return (
@@ -10,18 +17,29 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route path="/">
+          <Route path="/" exact component={Home}></Route>
+          <Route path="/signup" exact component={Signup}>
+            {/* Sign Up page */}
+          </Route>
+          <Route path="/workouts" exact component={WorkOuts}>
+            {/* workouts page */}
+          </Route>
+          <Route path="/swipepage" exact component={SwipePage}>
             <TinderCards />
             {/* home page */}
             <SwipeButtons />
             {/* Buttons */}
+            {/* swipe Page */}
           </Route>
-          <Route path="/Signup">{/* Sign Up page */}</Route>
-          <Route path="/WorkOuts">{/* workouts page */}</Route>
-          <Route path="/SwipePage">{/* swipe Page */}</Route>
-          <Route path="/MatchBox">{/* Match box */}</Route>
-          <Route path="/ChatBox">{/* Idividual chat screen */}</Route>
-          <Route path="/Profile">{/* personal profile*/}</Route>
+          <Route path="/matchbox" exact component={MatchBox}>
+            {/* Match box */}
+          </Route>
+          <Route path="/chatbox" exact component={ChatBox}>
+            {/* Idividual chat screen */}
+          </Route>
+          <Route path="/profile" exact component={Profile}>
+            {/* personal profile*/}
+          </Route>
         </Switch>
       </Router>
     </div>
