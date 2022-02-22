@@ -10,14 +10,22 @@ import SwipePage from "./components/SwipePage.js";
 import MatchBox from "./components/MatchBox.js";
 import ChatBox from "./components/ChatBox.js";
 import WorkOuts from "./components/WorkOuts.js";
+import { useState } from "react";
 
 function App() {
+  const [showHeader, setShowHeader] = useState(false);
+  
+  const handleHeader = (status) => {
+    setShowHeader(status);
+
+  }
+
   return (
     <div className="App">
-      <Header />
+      {showHeader && <Header />}
       <Router>
         <Switch>
-          <Route path="/" exact component={Home}></Route>
+          <Route path="/" exact component={() => <Home onGetStarted={handleHeader}/>}></Route>
           <Route path="/signup" exact component={Signup}>
             {/* Sign Up page */}
           </Route>

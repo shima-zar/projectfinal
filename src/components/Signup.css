@@ -3,7 +3,7 @@ body {
 	color:#edf3ff;
 	background:#c8c8c8;
 	background:url(https://images.pexels.com/photos/949131/pexels-photo-949131.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500) fixed;
-	background-size: cover;
+	background-size:cover;
 	font:600 16px/18px 'Open Sans',sans-serif;
 }
 :after,:before{box-sizing:border-box}
@@ -62,7 +62,7 @@ a{color:inherit;text-decoration:none}
 .login-html .sign-in:checked + .tab,
 .login-html .for-pwd:checked + .tab{
 	color:#fff;
-	border-color:#1161ee;
+	border-color:#ced2da;
 }
 .login-form{
 	min-height:345px;
@@ -98,7 +98,7 @@ a{color:inherit;text-decoration:none}
 	font-size:12px;
 }
 .login-form .group .button{
-	background:#c7c79f;
+	background:rgb(179, 187, 184);
 }
 .login-form .group label .icon{
 	width:15px;
@@ -135,7 +135,7 @@ a{color:inherit;text-decoration:none}
 	color:#fff;
 }
 .login-form .group .check:checked + label .icon{
-	background:#1161ee;
+	background:#dce0e7;
 }
 .login-form .group .check:checked + label .icon:before{
 	-webkit-transform:scale(1) rotate(45deg);
