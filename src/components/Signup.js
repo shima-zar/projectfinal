@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Signup.css";
 
 function Signup() {
@@ -97,7 +98,7 @@ function Signup() {
               
 
               <div className="group">
-                <input type="submit" className="button" value="Next" />
+                <Link to="/workouts" className="button">Next</Link>
               </div>
               <div className="hr"></div>
             </div>

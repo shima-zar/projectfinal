@@ -11,9 +11,7 @@ function Home({onGetStarted}) {
       <div className="content">
         
       <div className="btn">
-        <Button onClick={() => onGetStarted(true)}>
-          LET'S GET STARTED
-        </Button>
+        <Button onClick={() => onGetStarted(true)}></Button>
         </div>
       </div>
     </div>

@@ -11,25 +11,12 @@
 }
 
 .content {
+  text-align: center;
   position:fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  
   color: #f1f1f1;
   width: 100%;
-  padding: 20px;
+  padding: 430px;
 }
 
-#btn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: rgb(153, 74, 74);
-  cursor: pointer;
-}
-
-#btn:hover {
-  background: #ddd;
-  color: black;
-}
