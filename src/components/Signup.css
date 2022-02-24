@@ -73,7 +73,7 @@ a {
   display: inline-block;
   border-bottom: 2px solid transparent;
 }
-.login-html .sign-in:checked + .tab,
+
 .login-html .for-pwd:checked + .tab {
   color: #fff;
   border-color: #1161ee;

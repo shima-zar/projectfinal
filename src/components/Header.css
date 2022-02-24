@@ -4,12 +4,13 @@
   align-items: center;
   border-bottom: 1px solid rgb(237, 237, 237);
   z-index: 100;
+  background-color: rgba(255,255,255,255);
 }
 
-.header__logo1 {
+/* .header__logo1 {
   height: 60px;
   object-fit: contain;
-}
+} */
 .header__logo2 {
   height: 60px;
   object-fit: contain;
@@ -18,5 +19,5 @@
 }
 
 .header__icon {
-  padding: 40px;
+  padding: 10px;
 }

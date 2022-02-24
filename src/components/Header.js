@@ -5,6 +5,7 @@ import ForumIcon from "@mui/icons-material/Forum";
 // import WineBarIcon from "@mui/icons-material/WineBar";
 import IconButton from "@mui/material/IconButton";
 
+
 function Header() {
   return (
     //BEM
@@ -18,14 +19,11 @@ function Header() {
       <IconButton>
         <img
           className="header__logo1"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Running_icon_-_Noun_Project_22889.svg/200px-Running_icon_-_Noun_Project_22889.svg.png?20130913231835"
-          alt="runner"
+          src="../images/logo2"
+          
         />
-        <img
-          className="header__logo2"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Running_icon_-_Noun_Project_22889.svg/200px-Running_icon_-_Noun_Project_22889.svg.png?20130913231835"
-          alt="runner"
-        />
+        
+        
       </IconButton>
       {/* wine icon */}
       {/* <WineBarIcon /> */}
