@@ -1,10 +1,11 @@
 import { SwipeableDrawer } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TinderCard from "react-tinder-card";
+// import database from "../firebase.js";
 import "./TinderCards.css";
 
 function TinderCards() {
-  const [people, setpeople] = useState([
+  const [people, setPeople] = useState([
     {
       name: "Richard Martin",
       url: " https://hollywoodlife.com/wp-content/uploads/2019/05/famous-hunks-over-45-ricky-martin-2.jpg?w=800",
@@ -18,6 +19,14 @@ function TinderCards() {
       url: "https://mn2s-content.s3.eu-west-2.amazonaws.com/wp-content/uploads/2021/02/18183851/Pen%C3%A9lope-Cruz.png ",
     },
   ]);
+
+  // useEffect(() => {
+  //   database
+  //     .collection("people")
+  //     .onSnapshot((snapshot) =>
+  //       setPeople(snapshot.docs.map((doc) => doc.data()))
+  //     );
+  // }, []);
 
   const swiped = (direction, nameToDelete) => {
     console.log("removing: " + nameToDelete);

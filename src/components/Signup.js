@@ -1,4 +1,8 @@
 import React from "react";
+import FemaleIcon from "@mui/icons-material/Female";
+import MaleIcon from "@mui/icons-material/Male";
+import TransgenderIcon from "@mui/icons-material/Transgender";
+import IconButton from "@mui/material/IconButton";
 import "./Signup.css";
 
 function Signup() {
@@ -29,15 +33,8 @@ function Signup() {
                 <input id="user" type="text" className="input" />
               </div>
               <div className="group">
-                <label for="pass" className="label">
-                  Password
-                </label>
-                <input
-                  id="pass"
-                  type="password"
-                  className="input"
-                  data-type="password"
-                />
+                <label className="label">Password</label>
+                <input type="password" className="input" data-type="password" />
               </div>
               <div className="group">
                 <input type="submit" className="button" value="Sign In" />
@@ -69,20 +66,32 @@ function Signup() {
                 </label>
                 <div className="container">
                   <div className="row">
-                    <ul className="ds-btn">
-                      <li>
-                        <a className="btn btn-lg ">
-                          <i className="glyphicon glyphicon-link pull-left"></i>
-                          <span>Male</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="btn btn-lg ">
-                          <i className="glyphicon glyphicon-link pull-left"></i>
-                          <span>Female</span>
-                        </a>
-                      </li>
-                    </ul>
+                    {/* <ul className="ds-btn"> */}
+                    {/* <li> */}
+                    {/* <a className="btn btn-lg "> */}
+                    {/* <i className="glyphicon glyphicon-link pull-left"></i> */}
+                    <IconButton>
+                      <MaleIcon fontSize="large" color="primary" />
+                    </IconButton>
+                    {/* </a> */}
+                    {/* </li> */}
+                    {/* <li> */}
+                    {/* <a className="btn btn-lg "> */}
+                    {/* <i className="glyphicon glyphicon-link pull-left"></i> */}
+                    <IconButton>
+                      <FemaleIcon fontSize="large" color="primary" />
+                    </IconButton>
+                    {/* </a> */}
+                    {/* </li> */}
+                    {/* <li> */}
+                    {/* <a className="btn btn-lg "> */}
+                    {/* <i className="glyphicon glyphicon-link pull-left"></i> */}
+                    <IconButton>
+                      <TransgenderIcon fontSize="large" color="primary" />
+                    </IconButton>
+                    {/* </a> */}
+                    {/* </li> */}
+                    {/* </ul> */}
                   </div>
                 </div>
               </div>
