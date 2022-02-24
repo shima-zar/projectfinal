@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Button = () => {
     return (
-        <div className="container">
+        <div className="container2">
     <Link to="/signup" className="animated-word">
         LET'S GET STARTED
         
