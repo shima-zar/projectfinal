@@ -1,0 +1,29 @@
+.swipeButtons {
+  /* position:fixed; */
+  display: flex;
+  position: relative;
+  margin-top: 510px;
+  max-height: 100px;
+
+  /* margin-bottom: 10px; */
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border-top: 1px solid rgb(237, 237, 237); */
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 30px 30px 30px 30px;
+}
+.logo {
+  width: 200px;
+}
+
+.repeat {
+  color: red;
+  padding: 3vw;
+}
+.swipeButtons__lightning {
+  color: red;
+  padding: 3vw;
+}
