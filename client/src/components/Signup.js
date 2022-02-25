@@ -9,6 +9,14 @@ import "./Signup.css";
 function Signup() {
   const [images, setImages] = useState([]);
   const [imageURLs, setImageURLs] = useState([]);
+  const [newUser, setNewUser] = useState({
+    username: "",
+    email: "",
+    city: "",
+    age: 0,
+    photo: "",
+    activity: "",
+  });
 
   useEffect(() => {
     if (images.length < 1) return;
