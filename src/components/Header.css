@@ -1,21 +1,15 @@
 .header {
   display: flex;
+  /* position: absolute; */
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgb(237, 237, 237);
-  z-index: 100;
-  background-color: rgba(255,255,255,255);
+  max-height: 70px;
 }
 
-/* .header__logo1 {
+.logo {
+  margin-top: 20px;
   height: 60px;
   object-fit: contain;
-} */
-.header__logo2 {
-  height: 60px;
-  object-fit: contain;
-  transform: scaleX(-1);
-  
 }
 
 .header__icon {

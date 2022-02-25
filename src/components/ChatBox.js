@@ -2,11 +2,18 @@ import React from "react";
 import "./ChatBox.css";
 import Avatar from "@mui/material/Avatar";
 
-function ChatBox({ name, message, profilePic, timestamp }) {
+// import Header from "./Header";
+
+function ChatBox({ name, city, message, profilePic }) {
   return (
-    <div className="chatBox">
-      <Avatar className="chatBox--image" alt={name} src={profilePic}></Avatar>
-      <h1>This is individual chat Box page</h1>
+    <div className="chat__box">
+      <Avatar className="chat__image" src={profilePic} />
+      <div className="chat__details">
+        <h1>{name}</h1>
+
+        <p>{message}</p>
+        <h2>{city}</h2>
+      </div>
     </div>
   );
 }
