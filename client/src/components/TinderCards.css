@@ -2,16 +2,15 @@
   position: relative;
   background-color: #fff;
   width: 600px;
-  padding: 20px;
+  /* padding: 20px; */
   max-width: 85vw;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.3);
   /* height: 50vh; */
   /* object-fit: cover; */
   width: 100vw;
   height: 100vw;
-  margin-right: 50px;
-  margin-left: 50px;
-  border-radius: 20px;
+  margin: 10px 10px 10px 10px;
+  border: 1px rgb(255, 255, 255) solid;
   background-size: cover;
   background-position: center;
   /* align-items: center;

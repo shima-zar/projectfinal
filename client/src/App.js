@@ -14,18 +14,21 @@ import { useState } from "react";
 
 function App() {
   const [showHeader, setShowHeader] = useState(false);
-  
+
   const handleHeader = (status) => {
     setShowHeader(status);
-
-  }
+  };
 
   return (
     <div className="App">
       {showHeader && <Header />}
       <Router>
         <Switch>
-          <Route path="/" exact component={() => <Home onGetStarted={handleHeader}/>}></Route>
+          <Route
+            path="/"
+            exact
+            component={() => <Home onGetStarted={handleHeader} />}
+          ></Route>
           <Route path="/signup" exact component={Signup}>
             {/* Sign Up page */}
           </Route>
@@ -33,6 +36,7 @@ function App() {
             {/* workouts page */}
           </Route>
           <Route path="/swipepage" exact component={SwipePage}>
+            <Header />
             <TinderCards />
             {/* home page */}
             <SwipeButtons />
@@ -40,12 +44,15 @@ function App() {
             {/* swipe Page */}
           </Route>
           <Route path="/matchbox" exact component={MatchBox}>
+            {/* <Header /> */}
             {/* Match box */}
           </Route>
           <Route path="/chatbox" exact component={ChatBox}>
+            {/* <Header /> */}
             {/* Idividual chat screen */}
           </Route>
           <Route path="/profile" exact component={Profile}>
+            {/* <Header /> */}
             {/* personal profile*/}
           </Route>
         </Switch>

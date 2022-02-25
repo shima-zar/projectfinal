@@ -2,9 +2,8 @@ import React from "react";
 import "./Header.css";
 import PersonIcon from "@mui/icons-material/Person";
 import ForumIcon from "@mui/icons-material/Forum";
-// import WineBarIcon from "@mui/icons-material/WineBar";
 import IconButton from "@mui/material/IconButton";
-
+import image from "../images/typography1.png";
 
 function Header() {
   return (
@@ -12,25 +11,13 @@ function Header() {
     <div className="header">
       {/* material ui perofile icon */}
       <IconButton>
-        <PersonIcon className="header__icon" fontSize="large" />
+        <PersonIcon className="icon" fontSize="large" />
       </IconButton>
-      {/* instead of icon i used an image */}
+
       {/* icon button makes the icons fancy click on button create a circle shape around it */}
+      <img src={image} className="logo" alt="logo"></img>
       <IconButton>
-        <img
-          className="header__logo1"
-          src="../images/logo2"
-          
-        />
-        
-        
-      </IconButton>
-      {/* wine icon */}
-      {/* <WineBarIcon /> */}
-      {/* material ui import chat icon */}
-      {/* fontSize changes the size of icon and doesn't change the text size */}
-      <IconButton>
-        <ForumIcon className="header__icon" fontSize="large" />
+        <ForumIcon className="icon" fontSize="large" />
       </IconButton>
     </div>
   );
