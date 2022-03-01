@@ -10,10 +10,21 @@ import SwipePage from "./components/SwipePage.js";
 import MatchBox from "./components/MatchBox.js";
 import ChatBox from "./components/ChatBox.js";
 import WorkOuts from "./components/WorkOuts.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [showHeader, setShowHeader] = useState(false);
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    fetch("/users")
+      .then((res) => res.json())
+      .then((json) => {
+        setUsers(json);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   const handleHeader = (status) => {
     setShowHeader(status);
