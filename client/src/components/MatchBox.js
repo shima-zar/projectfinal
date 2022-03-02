@@ -1,5 +1,4 @@
 import React from "react";
-import "./MatchBox.css";
 import ChatBox from "./ChatBox";
 import Header from "./Header";
 
@@ -8,10 +7,10 @@ function MatchBox() {
     <div className="matchBox">
       <Header />
       <ChatBox
-        name="Rose"
-        city="london"
-        message="Tomorrow at 6am yoga at pearl beach?"
-        profilePic="https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        name="Karla"
+        city="Barcelona"
+        message="Tomorrow at 6am yoga at Abfitness?"
+        profilePic="https://media-exp1.licdn.com/dms/image/D4E03AQE9twzoYDDBnw/profile-displayphoto-shrink_200_200/0/1640109997808?e=1648080000&v=beta&t=8KDfye7fV4KAnOhb-CPNaJ1Ek2kS9L6T3Mh2hFb32x8"
       />
       <ChatBox
         name="joon"

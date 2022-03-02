@@ -11,6 +11,7 @@ import MatchBox from "./components/MatchBox.js";
 import ChatBox from "./components/ChatBox.js";
 import WorkOuts from "./components/WorkOuts.js";
 import { useState, useEffect } from "react";
+import ChatScreen from "./components/ChatScreen.js";
 
 function App() {
   const [showHeader, setShowHeader] = useState(false);
@@ -49,22 +50,20 @@ function App() {
           <Route path="/swipepage" exact component={SwipePage}>
             <Header />
             <TinderCards />
-            {/* home page */}
             <SwipeButtons />
-            {/* Buttons */}
-            {/* swipe Page */}
           </Route>
           <Route path="/matchbox" exact component={MatchBox}>
-            {/* <Header /> */}
             {/* Match box */}
           </Route>
-          <Route path="/chatbox" exact component={ChatBox}>
-            {/* <Header /> */}
+          <Route path="/chatscreen" exact component={ChatScreen}>
+            <Header />
             {/* Idividual chat screen */}
           </Route>
-          <Route path="/profile" exact component={Profile}>
-            {/* <Header /> */}
-            {/* personal profile*/}
+          <Route path="/matchbox/:person">
+            <Header />
+            <ChatScreen />
+            {/* <ChatBox /> */}
+            {/* workouts page */}
           </Route>
         </Switch>
       </Router>

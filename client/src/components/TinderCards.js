@@ -21,6 +21,11 @@ function TinderCards() {
       city: "Berlin",
       url: "https://mn2s-content.s3.eu-west-2.amazonaws.com/wp-content/uploads/2021/02/18183851/Pen%C3%A9lope-Cruz.png ",
     },
+    {
+      name: "Karla",
+      city: "Barcelona",
+      url: "https://media-exp1.licdn.com/dms/image/D4E03AQE9twzoYDDBnw/profile-displayphoto-shrink_200_200/0/1640109997808?e=1648080000&v=beta&t=8KDfye7fV4KAnOhb-CPNaJ1Ek2kS9L6T3Mh2hFb32x8",
+    },
   ]);
 
   // useEffect(() => {
@@ -41,8 +46,8 @@ function TinderCards() {
   };
 
   return (
-    <div className="tinderCards">
-      <div className="tinderCards__cardContainer">
+    <div className="Cards">
+      <div className="Cards__cardContainer">
         {people.map((person) => (
           <TinderCard
             className="swipe"
@@ -53,9 +58,16 @@ function TinderCards() {
           >
             <div
               style={{ backgroundImage: `url(${person.url})` }}
-              className="tinderCard"
+              className="Card"
             >
               <h3>{person.name}</h3>
+              {/* <Link to="/chatbox/:person">
+        <IconButton className="swipeButtons__right">
+          <FavoriteBorderTwoToneIcon
+            sx={{ fontSize: 50 }}
+          />
+        </IconButton>
+      </Link> */}
             </div>
           </TinderCard>
         ))}

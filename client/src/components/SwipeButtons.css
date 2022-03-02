@@ -2,7 +2,7 @@
   /* position:fixed; */
   display: flex;
   position: relative;
-  margin-top: 510px;
+  margin: 50px 180px;
   max-height: 100px;
 
   /* margin-bottom: 10px; */
@@ -10,10 +10,7 @@
   justify-content: space-evenly;
   align-items: center;
   /* border-top: 1px solid rgb(237, 237, 237); */
-  background-color: #ffffff10;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 30px 30px 30px 30px;
+  /* ! */
 }
 .logo {
   width: 200px;
@@ -24,6 +21,6 @@
   padding: 3vw;
 }
 .swipeButtons__lightning {
-  color: red;
+  color: white !important;
   padding: 3vw;
 }

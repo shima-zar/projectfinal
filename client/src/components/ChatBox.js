@@ -10,7 +10,6 @@ function ChatBox({ name, city, message, profilePic }) {
       <Avatar className="chat__image" src={profilePic} />
       <div className="chat__details">
         <h1>{name}</h1>
-
         <p>{message}</p>
         <h2>{city}</h2>
       </div>
