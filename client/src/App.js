@@ -44,6 +44,9 @@ function App() {
           <Route path="/signup" exact component={Signup}>
             {/* Sign Up page */}
           </Route>
+          <Route path="/profile" exact component={Profile}>
+            {/* Profile page */}
+          </Route>
           <Route path="/workouts" exact component={WorkOuts}>
             {/* workouts page */}
           </Route>
@@ -59,6 +62,7 @@ function App() {
             <Header />
             {/* Idividual chat screen */}
           </Route>
+          
           <Route path="/matchbox/:person">
             <Header />
             <ChatScreen />
