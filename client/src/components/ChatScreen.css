@@ -1,13 +1,19 @@
 .ChatScreen {
-  margin-left: 20px;
+  position: relative;
+  align-items: center;
+  text-align: center;
 }
 .chatScreen__message {
+  position: relative;
   display: flex;
   align-items: center;
   background-color: white;
   padding: 20px 20px 20px 20px;
   margin-right: 60px;
-  margin-left: 40px;
+  margin-left: 60px;
+  width: 90vw;
+  max-width: 80vw;
+  text-align: center;
 }
 h4 {
   text-align: center;
@@ -34,4 +40,33 @@ h4 {
 }
 .chat__input {
   background-color: rgb(230, 248, 215);
+}
+.chatScreen__input {
+  position: relative;
+  align-items: center;
+  width: 80vw;
+  max-width: 120vw;
+  background-color: white;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 0px 00px 20px 20px;
+}
+.chatScreen__inputform {
+  width: 60vw;
+  height: 70px;
+  max-width: 120vw;
+  background-color: rgb(230, 248, 215);
+  border: 1px;
+  padding-left: 10px;
+  border-radius: 40px;
+}
+.chatbutton {
+  transform: rotate(330deg);
+  padding: 15px !important;
+  margin-bottom: 5px !important;
+  margin-left: 20px !important;
+  color: rgb(230, 248, 215) !important;
 }

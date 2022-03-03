@@ -2,6 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./ChatScreen.css";
 import Avatar from "@mui/material/Avatar";
+import SendTwoToneIcon from "@mui/icons-material/SendTwoTone";
+import IconButton from "@mui/material/IconButton";
 
 function ChatScreen() {
   const [messages, setMessages] = useState([
@@ -47,6 +49,18 @@ function ChatScreen() {
           </div>
         )
       )}
+      <div className="chatScreen__input">
+        <form>
+          <input
+            placeholder="Type a message ..."
+            type="text"
+            className="chatScreen__inputform"
+          />
+          <IconButton className="chatbutton">
+            <SendTwoToneIcon sx={{ fontSize: 40 }}></SendTwoToneIcon>
+          </IconButton>
+        </form>
+      </div>
     </div>
   );
 }
