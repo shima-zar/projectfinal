@@ -6,9 +6,8 @@ import IconButton from "@mui/material/IconButton";
 import image from "../images/typography1.png";
 import { Link } from "react-router-dom"
 
-function Header() {
+function Header({ backButton }) {
   return (
-    //BEM
     <div className="header">
       {/* material ui perofile icon */}
       <Link to="/profile">

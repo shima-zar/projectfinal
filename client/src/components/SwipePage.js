@@ -15,7 +15,7 @@ function SwipePage() {
       {/* home page */}
       <SwipeButtons />
 
-      <img src={image} className="logo" alt="logo"></img>
+      {/* <img src={image} className="logo" alt="logo"></img> */}
     </div>
   );
 }
