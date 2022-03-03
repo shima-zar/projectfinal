@@ -3,7 +3,7 @@
 }
 
 #myVideo {
-  position:relative;
+  position: relative;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -12,11 +12,10 @@
 
 .content {
   text-align: center;
-  position:fixed;
+  position: fixed;
   bottom: 0;
-  
+
   color: #f1f1f1;
-  
+
   padding: 430px;
 }
-
