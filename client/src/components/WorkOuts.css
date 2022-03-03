@@ -58,13 +58,25 @@ em {
   text-align: center;
   width: 250px;
   cursor: pointer;
+
   
 }
 
 .btn-three {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
   color: #FFF;
   transition: all 0.5s;
   position: relative;
+  margin-top:10%;
+  margin-left: 40%;
+  margin-bottom: 10%;
+  padding-bottom: 4%;
+  
+
   
 }
 .btn-three::before {
@@ -108,7 +120,8 @@ input[type="checkbox"] + label {
   position: relative;
   padding-left: 35px;
   margin-bottom: 20px;
-  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  font: 18px/20px 'Open Sans', Arial, sans-serif;
+  font-weight:bolder;
   color: #ddd;
   cursor: pointer;
   -webkit-user-select: none;
@@ -143,3 +156,4 @@ input[type="checkbox"]:checked + label:before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+

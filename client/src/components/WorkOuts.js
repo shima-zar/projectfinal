@@ -19,7 +19,7 @@ function WorkOuts() {
            
             <p className="carousel-caption">
               <input type="checkbox" id="box-1" />
-              <label for="box-1">BOXING</label>
+              <label htmlFor="box-1">BOXING</label>
             </p>
           </div>
           {/* BOXING */}
@@ -27,12 +27,12 @@ function WorkOuts() {
         <div className="col-sm-4 ">
           <div className="item">
             <img
-              src="https://media.istockphoto.com/photos/young-woman-doing-yoga-twist-mat-healthy-lifestyle-picture-id820933744?k=20&m=820933744&s=612x612&w=0&h=7k8L0TpgHo75T-Aufs9BAjdCcv7CSAdHmeUEfY5bYZA="
+              src="https://images.pexels.com/photos/6740756/pexels-photo-6740756.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
               className="img-thumbnail"
             />
             <p className="carousel-caption">
               <input type="checkbox" id="box-2" />
-              <label for="box-2">PILATES</label>
+              <label htmlFor="box-2">PILATES</label>
             </p>
           </div>
           {/* PILATES */}
@@ -45,7 +45,7 @@ function WorkOuts() {
             />
             <p className="carousel-caption">
               <input type="checkbox" id="box-3" />
-              <label for="box-3">TRX</label>
+              <label htmlFor="box-3">TRX</label>
             </p>
           </div>
           {/* TRX */}
@@ -58,7 +58,7 @@ function WorkOuts() {
             />
             <p className="carousel-caption">
               <input type="checkbox" id="box-4" />
-              <label for="box-4">CROSSFIT</label>
+              <label htmlFor="box-4">CROSSFIT</label>
             </p>
           </div>
           {/* CROSSFIT */}
@@ -71,7 +71,7 @@ function WorkOuts() {
             />
             <p className="carousel-caption">
               <input type="checkbox" id="box-5" />
-              <label for="box-5">CYCLING</label>
+              <label htmlFor="box-5">CYCLING</label>
             </p>
           </div>
           {/* CYCLING */}
@@ -84,7 +84,7 @@ function WorkOuts() {
             />
             <p className="carousel-caption">
               <input type="checkbox" id="box-6" />
-              <label for="box-6">AEROBIC</label>
+              <label htmlFor="box-6">AEROBIC</label>
             </p>
           </div>
           {/* AEROBIC */}
@@ -97,7 +97,7 @@ function WorkOuts() {
             />
             <p className="carousel-caption">
               <input type="checkbox" id="box-7" />
-              <label for="box-7">HIKING</label>
+              <label htmlFor="box-7">HIKING</label>
             </p>
           </div>
           {/* HIKING */}
@@ -110,7 +110,7 @@ function WorkOuts() {
             />
             <p className="carousel-caption">
               <input type="checkbox" id="box-8" />
-              <label for="box-8">YOGA</label>
+              <label htmlFor="box-8">YOGA</label>
             </p>
           </div>
           {/* YOGA */}
@@ -123,7 +123,7 @@ function WorkOuts() {
             />
             <p className="carousel-caption">
               <input type="checkbox" id="box-9" />
-              <label for="box-9">RUNNING</label>
+              <label htmlFor="box-9">RUNNING</label>
             </p>
           </div>
           {/* RUNNING */}

@@ -77,13 +77,7 @@ function Signup() {
                       placeholder="Enter your password"
                     />{" "}
                   </div>
-                  <div className="group">
-                    {" "}
-                    <input id="check" type="checkbox" className="check" />{" "}
-                    <label htmlFor="check">
-                      <span className="icon"></span> Keep me Signed in
-                    </label>{" "}
-                  </div>
+                  
                   <div className="group">
                     {" "}
                     <input
