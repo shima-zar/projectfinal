@@ -16,7 +16,7 @@ function WorkOuts() {
               src="https://images.pexels.com/photos/4753893/pexels-photo-4753893.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
               className="img-thumbnail"
             />
-           
+
             <p className="carousel-caption">
               <input type="checkbox" id="box-1" />
               <label htmlFor="box-1">BOXING</label>

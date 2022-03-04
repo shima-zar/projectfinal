@@ -4,7 +4,6 @@ import "./Edit.css";
 function Edit() {
   return (
     <div className="d-flex justify-content-center container">
-        
       <div className="row">
         <div className="col-md-3 border-right">
           <div className="d-flex flex-column align-items-center p-3 py-5 text-center">
@@ -12,7 +11,6 @@ function Edit() {
               className="rounded-circle"
               src="https://images.pexels.com/photos/4753928/pexels-photo-4753928.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
               width="150"
-              
             />
             <span className="font-weight-bold username ">ANNA</span>
             <span className="text-black-50">AnnaTheGreat@gmail.com</span>
@@ -43,7 +41,6 @@ function Edit() {
                   placeholder="edit email"
                 />
               </div>
-              
             </div>
             <div className="row mt-3">
               <div className="col-md-12">
@@ -55,11 +52,8 @@ function Edit() {
                   value=""
                 />
               </div>
-              
-              
-              
             </div>
-            
+
             <div className="mt-5 text-center">
               <button className="btn btn-primary profile-button" type="button">
                 Save Profile
@@ -67,7 +61,6 @@ function Edit() {
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   );
