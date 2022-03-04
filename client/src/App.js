@@ -12,6 +12,7 @@ import ChatBox from "./components/ChatBox.js";
 import WorkOuts from "./components/WorkOuts.js";
 import { useState, useEffect } from "react";
 import ChatScreen from "./components/ChatScreen.js";
+import Edit from "./components/Edit.js"
 
 function App() {
   const [showHeader, setShowHeader] = useState(false);
@@ -46,6 +47,9 @@ function App() {
           </Route>
           <Route path="/profile" exact component={Profile}>
             {/* Profile page */}
+          </Route>
+          <Route path="/edit" exact component={Edit}>
+            {/* Profile edit page */}
           </Route>
           <Route path="/workouts" exact component={WorkOuts}>
             {/* workouts page */}

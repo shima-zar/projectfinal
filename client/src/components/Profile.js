@@ -21,6 +21,7 @@ function Profile() {
             <div className="profileButtons">
               <nav>
                 <ul>
+                <Link to="/edit">
                   <li>
                     Edit profile
                     <span></span>
@@ -28,6 +29,7 @@ function Profile() {
                     <span></span>
                     <span></span>
                   </li>
+                  </Link>
                   <li>
                     Settings
                     <span></span>
@@ -35,6 +37,24 @@ function Profile() {
                     <span></span>
                     <span></span>
                   </li>
+                  <Link to="/swipepage">
+                  <li>
+                    Return
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </li>
+                  </Link>
+                  <Link to="/matchbox">
+                  <li>
+                    Messages
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </li>
+                  </Link>
                 </ul>
               </nav>
             </div>
@@ -124,7 +144,10 @@ function Profile() {
                   <div className="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                     <div className="image">
                       <Link
-                        to={{ pathname: "https://www.okadoc.com/blog/healthy-lifestyle/the-best-places-to-train-outside-the-gym/" }}
+                        to={{
+                          pathname:
+                            "https://www.okadoc.com/blog/healthy-lifestyle/the-best-places-to-train-outside-the-gym/",
+                        }}
                         target="_blank"
                       >
                         <img

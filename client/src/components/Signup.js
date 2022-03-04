@@ -15,7 +15,7 @@ function Signup() {
     email: "",
   });
   const handleChange = (e) => {
-    setUserSignUp((state) => ({...state, [e.target.name]: e.target.value}));
+    setUserSignUp((state) => ({ ...state, [e.target.name]: e.target.value }));
   };
 
   useEffect(() => {
@@ -77,7 +77,7 @@ function Signup() {
                       placeholder="Enter your password"
                     />{" "}
                   </div>
-                  
+
                   <div className="group">
                     {" "}
                     <input
@@ -185,6 +185,7 @@ function Signup() {
                     {" "}
                     <label htmlFor="tab-1">Already Member?</label>{" "}
                   </div>
+                  <div className="hr"></div>
                 </div>
               </div>
             </div>
